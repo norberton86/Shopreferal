@@ -1,7 +1,7 @@
 import React from 'react'
 import {GoogleMap,withScriptjs,withGoogleMap,Marker, InfoWindow} from 'react-google-maps'
 import './map.scss'
-import logo from '../../../assets/marker.png'
+import logo from '../../../../assets/marker.png'
  
 class MapObject extends React.Component{
     constructor(props){
