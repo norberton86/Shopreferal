@@ -1,0 +1,87 @@
+@import "../../../sass/css-variables.scss";
+
+.body-header{
+    height: 49px;
+    border-bottom: 1px solid #9b9b9b;
+    display: flex;
+    justify-content: flex-start;
+
+    .left{
+         width: 703px;
+         height: 100%;
+         padding:16px 0px 0px 6px; 
+
+         span{
+            font-family: 'AutoZoneCond';
+            font-size: 24px;
+            font-weight: 900;
+         }
+    }
+
+    .right{
+      width: 497px;
+      height: 100%;
+   
+      display: flex;
+      align-items: center;
+
+
+      .inner-box{
+         display: flex;
+         flex-direction: column;  
+
+         &:nth-child(1){
+           margin-left: 16px;
+         }
+
+         span{
+           font-family: 'AutoZoneCond';
+           font-size: 14px;
+           font-weight: 900;
+           font-style: normal;
+
+           &:nth-child(1){
+            color: $autozone-orange-color;
+           }     
+         
+           &:nth-child(2){
+           color: $autozone-black-color;
+           font-weight: bold;
+           line-height: 1.14;
+          }  
+
+          .details{
+            font-size: 10px;
+            font-weight: initial;
+            text-decoration: underline;
+            margin-left: 2px;
+            cursor: pointer;
+          }
+         }
+      }
+
+      .pipe{
+        width: 1px;
+        height: 38px;
+        background-color: #c4c4c4;
+        margin:0px 16px 0px 16px;
+      }
+
+      .faq{
+        display: flex;
+        flex-direction: column;  
+        margin-left: 16px;
+        cursor: pointer;
+
+        span {
+          font-family: Arial;
+          font-size: 10px;
+          color: $autozone-black-color;
+          
+        }
+      }
+
+    }
+
+}
+

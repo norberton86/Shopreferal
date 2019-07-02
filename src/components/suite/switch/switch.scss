@@ -1,0 +1,40 @@
+@import "../../../sass/css-variables.scss";
+
+.switch{
+    width: 233px;
+    height: 28px;
+    border: solid 1px #008300;
+    cursor: pointer;
+    display: flex;
+
+    .control{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            margin-left: 6px;
+            font-family: 'AutoZoneCond';
+            font-size: 14px;
+            font-weight: 900;
+            font-style: normal
+        }
+
+        .span-switch-active{
+            color: white;
+        }
+
+        .span-switch-inactive{
+            color: $autozone-black-color;
+        }
+    }
+
+    .active{
+        background-color: #008300;
+    }
+
+    .inactive{
+        background-color: #f8f8f8;
+    }
+}

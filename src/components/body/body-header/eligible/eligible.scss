@@ -1,0 +1,132 @@
+@import "../../../../sass/css-variables.scss";
+
+.eligible{
+    width: 576px;
+    height: 425px;
+    border: solid 1px #c4c4c4;
+    background-color: #ffffff;
+    padding: 16px 16px 0 16px;
+
+    .header{
+        width: 100%;
+        height: 40px;
+        background-color: #9b9b9b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .title{
+            font-family: 'AutoZoneCond';
+            font-size: 16px;
+            font-weight: 900;
+            color:$autozone-black-color;
+            margin-left: 16px;
+        }
+
+        .close{
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: bold;
+            color:$autozone-black-color;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+    }
+
+    .support{
+        margin: 16px 0 13px 0;
+        font-size: 14px;
+
+        span{
+            font-family: Arial;
+            font-weight: initial;
+            &:nth-child(1){
+                font-weight: bold;
+                color: $regular-text-color;
+            }
+
+            &:nth-child(4){
+                color: $autozone-orange-color;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        }
+      
+    }
+
+    .dashed{
+        width: 99%;
+        height: 302px;
+        border: dashed 3px $autozone-orange-color;
+        background-color: #f8f8f8;
+        padding: 24px 0 0 0;
+
+        .earn{
+            font-family: Arial;
+            font-size: 26px;
+            font-weight: normal;
+            font-style: normal;
+            color: $autozone-orange-color;
+            margin-left: 24px;
+        }
+
+        .price{
+            color: $regular-text-color;
+            display: flex;
+            margin: 10px 0 21px 24px;
+            align-items: center;
+
+            span{
+                &:nth-child(1){
+                    font-family: 'AutoZoneCond';
+                    font-weight: 500;
+                    font-style: italic;
+                    font-size: 100px;
+                }
+            }
+
+            .pipe{
+                width: 1px;
+                height: 73px;
+                background-color: #c4c4c4;
+                margin:0 16px 0 26px;
+            }
+
+            .description{
+
+                span{
+                    font-family: Arial;
+                    font-size: 26px;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+            }
+        }
+
+        .approved{
+            font-family: 'AutoZoneCond';
+            font-size: 26px;
+            font-weight: 500;
+            font-style: normal;
+            color: $regular-text-color;
+            margin:0 0 7px 23px;
+        }
+
+        .list{
+            margin:14px 0 0 23px; 
+            span{
+                
+                    font-family: Arial;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-style: normal;
+                    color: $regular-text-color;
+            
+
+            }
+        }
+    }
+
+}

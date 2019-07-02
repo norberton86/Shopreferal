@@ -1,0 +1,41 @@
+@import "../../../../../sass/css-variables.scss";
+
+.circle{
+    height: 32px;
+    width:  32px;
+    background-color: #f6f6f6;
+    border: solid 1px #c4c4c4;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inner-inactive{
+        height: 16px;
+        width:  16px;
+        background-color: #ffff;
+        border: solid 3px #f37f00;
+        border-radius: 50%;
+    }
+
+    .inner-active{
+        height: 16px;
+        width:  16px;
+        background-color: #ffff;
+        border: solid 1px #c4c4c4;
+        border-radius: 50%;
+    }
+}
+
+.complete{
+    width: 36px;
+    height: 36px;
+    border: solid 1px $autozone-orange-color;
+    background-color: $autozone-orange-color;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

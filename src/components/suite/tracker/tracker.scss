@@ -1,0 +1,19 @@
+@import "../../../sass/css-variables.scss";
+
+.tracker{
+    width: 740px;
+    height: 88px;
+    //background-color:chartreuse;
+
+    .barContainer{
+        display: flex;
+        padding: 16px 0 0 72px;
+        box-sizing: border-box;
+    }
+
+    .steps{
+        display: flex;
+        position: relative;
+        top: -21px;
+    }
+}

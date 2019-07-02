@@ -1,0 +1,35 @@
+@import "../../../sass/css-variables.scss";
+
+.checkBox{
+    width: 171px;
+    display: flex;
+    justify-content: space-between;
+
+    .check{
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .check-active{
+        background-color:$autozone-orange-color;
+        border:solid 1px $autozone-orange-color;
+    }
+    
+    .check-inactive{
+        background-color: #ffffff;
+        border:solid 1px #c4c4c4
+    }
+
+    .text{
+        width: 143px;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.29;
+        color:$regular-text-color;
+    }
+}

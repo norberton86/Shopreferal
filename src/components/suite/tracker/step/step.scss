@@ -1,0 +1,31 @@
+@import "../../../../sass/css-variables.scss";
+
+.step{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+
+     .name{
+        font-family: 'AutoZoneCond';
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.11;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+
+        .active{
+         color:$autozone-orange-color;
+        }
+
+        .inactive{
+         color: #9b9b9b;
+        } 
+     }
+}

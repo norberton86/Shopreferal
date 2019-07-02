@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "AutoZoneCond";
+    src:  url('AZFonts/AutoZoneCond-Medium.eot?wmi1bs');
+      src: url("AZFonts/AutoZoneCond.eot");
+      src: url("AZFonts/AutoZoneCond.eot?iefix") format('embedded-opentype'),
+      url("AZFonts/AutoZoneCond.woff") format("woff"),
+      url("AZFonts/AutoZoneCond.woff2") format("woff2"),
+      url("AZFonts/AutoZoneCond.ttf") format("truetype"),
+      url("AZFonts/AutoZoneCond.svg#AutoZoneCond") format("svg");
+      font-weight:normal;
+      font-style:normal;
+  }

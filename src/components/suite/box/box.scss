@@ -1,0 +1,29 @@
+.box{
+    .header{
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px 0 16px;
+
+        .title{
+            font-family: 'AutoZoneCond';
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .hint{
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+
+    .content{
+        padding: 16px 16px 0 16px;
+        border: solid 1px #c4c4c4;
+        background-color: #ffffff;
+    }
+}

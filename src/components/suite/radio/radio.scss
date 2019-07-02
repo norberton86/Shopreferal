@@ -1,0 +1,44 @@
+@import "../../../sass/css-variables.scss";
+
+.radioButton{
+    width: 171px;
+    display: flex;
+    justify-content: space-between;
+    
+    .radio{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .radio-inner{
+            height: 6px;
+            width: 6px;
+            background-color: #ffff;
+            border-radius: 50%;
+        }
+    }
+    
+    .radio-active{
+        background-color:$autozone-orange-color;
+        border:solid 1px $autozone-orange-color;
+    }
+    
+    .radio-inactive{
+        background-color: #ffffff;
+        border:solid 1px #c4c4c4
+    }
+
+    .text{
+        width: 143px;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.29;
+        color:$regular-text-color;
+    }
+}

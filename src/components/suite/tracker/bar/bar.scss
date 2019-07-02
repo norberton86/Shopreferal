@@ -1,0 +1,14 @@
+@import "../../../../sass/css-variables.scss";
+
+.bar{
+    width: 205px;
+    height: 6px;
+}
+
+.activeBar{
+    background-color: $autozone-orange-color;
+}
+
+.inactiveBar{
+    background-color: #cbcbcb;
+}

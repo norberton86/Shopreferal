@@ -1,0 +1,35 @@
+@import "../../../sass/css-variables.scss";
+
+.input{
+
+    label{
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 5px;
+        background-color: white;
+
+        span{
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: bold;
+
+            &:nth-child(1){
+                color:#d52b1e;
+            }
+
+            &:nth-child(2){
+                color:$regular-text-color;
+
+            }
+        }
+    }
+
+    input{
+        border: solid 1px #c4c4c4;
+        padding-left: 12px;
+        font-family: Arial;
+        font-size: 14px;
+        color: $autozone-black-color;
+        height: 38px;
+    }
+}
