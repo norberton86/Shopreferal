@@ -1,0 +1,23 @@
+@import "../../../sass/css-variables.scss";
+
+.stepWrapper{
+
+    padding-top: 16px;
+
+    .centered{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .actions{
+        margin-top: 16px;
+        display: flex;
+        justify-content: flex-end;
+
+        button{
+            margin-left: 16px;
+        }
+    }
+
+}

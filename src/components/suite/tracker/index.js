@@ -8,15 +8,10 @@ export default class Tracker extends React.PureComponent{
 
     constructor(props){
         super(props)
-
-        this.state={
-            currentStep:3,
-            fullCover:false,
-        }
     }
 
     evaluateStep(stepIndex){
-        const {fullCover,currentStep} = this.state
+        const {fullCover,currentStep} = this.props
 
         if(fullCover || stepIndex < currentStep )
             return circleTypes.complete
@@ -28,7 +23,7 @@ export default class Tracker extends React.PureComponent{
     
     render(){
 
-        const {currentStep} = this.state
+        const {currentStep} = this.props
 
         return <div className="tracker">
                     <div className="barContainer">
