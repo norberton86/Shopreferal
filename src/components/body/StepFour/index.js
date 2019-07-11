@@ -3,6 +3,7 @@ import StepWrapper from '../../body/StepWrapper'
 import './stepFour.scss'
 
 export default class StepFour extends React.Component{
+    // eslint-disable-next-line
     constructor(props){
         super(props)
     }

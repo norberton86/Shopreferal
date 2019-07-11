@@ -1,0 +1,19 @@
+@import "../../../sass/css-variables.scss";
+
+.radioGroup{
+
+        display: flex;
+        border:none;
+        padding: 0;
+
+        .half{
+            width:50%;
+            
+            .radioButton{
+                margin-bottom: 16px;
+            }
+     
+        }
+    
+
+}

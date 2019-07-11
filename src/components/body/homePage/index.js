@@ -4,6 +4,7 @@ import ButtonAutoZone from '../../suite/button-autozone'
 import  Map from './map'
 
 export default class HomePage extends React.Component{
+    // eslint-disable-next-line
     constructor(props){
         super(props)
     }

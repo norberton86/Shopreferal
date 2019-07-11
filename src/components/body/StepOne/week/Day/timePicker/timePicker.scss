@@ -1,0 +1,41 @@
+@import "../../../../../../sass/css-variables.scss";
+
+.timePicker{
+    
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    
+    .timePickerList{
+        position: absolute;
+        z-index: 999;
+        border: solid 1px #c4c4c4;
+        border-top: none;
+        background: white;
+        max-height: 139px;
+        overflow-y: auto;
+      }
+
+    .timer{
+        width: 93px;
+        height: 38px;
+        border: solid 1px #c4c4c4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        span{
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: normal;
+            color: $autozone-black-color;
+             margin-right: 6px;
+        }
+    }
+
+    .openHours{
+        margin: 16px 0 16px 0;
+    }
+
+}

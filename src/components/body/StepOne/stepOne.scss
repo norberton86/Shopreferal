@@ -1,0 +1,148 @@
+@import "../../../sass/css-variables.scss";
+
+#boxStepOne{
+    justify-content: flex-start;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    
+    &:nth-child(1){
+        width: 225px;
+        margin-right:60px; 
+
+        font-size: 16px;
+        font-family: Arial;
+
+        line-height: 1.5;
+
+        .name{
+            font-weight: bold;
+        }
+
+        .address{
+            font-style: normal;
+        }
+
+        .email{
+            font-style: normal;
+            color: $autozone-orange-color
+        }
+
+        .web{
+            font-style: normal;
+            color: $autozone-orange-color
+        }
+    }
+
+    &:nth-child(2){
+        width: 153px;
+        margin-right:129px; 
+    }
+
+    &:nth-child(3){
+        width: 169px;
+        margin-right:148px; 
+    }
+
+    &:nth-child(4){
+        width: 127px;
+    }
+
+    .title{
+        font-family: 'AutoZoneCond';
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 8px;
+        color: $regular-text-color;
+    }
+
+    #pictureTitle{
+        margin-bottom: 5px;
+    }
+
+    .value{
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: normal;
+        color: $regular-text-color;
+    }
+
+    .value-margin{
+        margin-bottom: 26px;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.informationButtonContainer{
+    width: 100%;
+    height: 60px;
+    border: solid 1px #c4c4c4;
+    background-color: #f8f8f8;
+    border-top: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+    button{
+        margin-right: 16px;
+    }
+}
+
+.detailsBox{
+    width: 1158px;
+    border: solid 1px #c4c4c4;
+    border-top: none;
+    padding: 16px 16px 0 16px;
+
+    .languageHeader{
+        font-family: 'AutoZoneCond';
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        color: $regular-text-color;
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+
+        .languageBar{
+            width: 848px;
+            border: solid 1px #c4c4c4;
+            margin-left: 8px;
+        }
+    }
+
+    .daysHeader{
+        font-family: 'AutoZoneCond';
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        color: $regular-text-color;
+        display: flex;
+        align-items: center;
+        margin:24px 0 16px 0;
+
+        .daysBar{
+            width: 535px;
+            border: solid 1px #c4c4c4;
+            margin-left: 8px;
+        }
+    }
+
+    .timeHeader{
+        height: 77px;
+        border: solid 1px #c4c4c4;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+    }
+    
+}

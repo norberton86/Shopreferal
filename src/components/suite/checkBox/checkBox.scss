@@ -1,16 +1,16 @@
 @import "../../../sass/css-variables.scss";
 
 .checkBox{
-    width: 171px;
-    display: flex;
-    justify-content: space-between;
 
+    display: flex;
+    
     .check{
         width: 15px;
         height: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     
     .check-active{
@@ -24,7 +24,7 @@
     }
 
     .text{
-        width: 143px;
+        margin-left: 8px;
         font-family: Arial;
         font-size: 14px;
         font-weight: normal;

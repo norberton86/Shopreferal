@@ -1,4 +1,5 @@
 .box{
+    border: solid 1px #c4c4c4;
     .header{
         height: 42px;
         display: flex;
@@ -23,7 +24,7 @@
 
     .content{
         padding: 16px 16px 0 16px;
-        border: solid 1px #c4c4c4;
         background-color: #ffffff;
+        border-top: none;
     }
 }

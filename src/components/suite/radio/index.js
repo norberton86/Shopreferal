@@ -3,24 +3,22 @@ import './radio.scss'
 
 
 export default class Radio extends React.PureComponent{
+    // eslint-disable-next-line
     constructor(props){
         super(props)
 
-        this.state={
-            active:false
-        }
     }
 
     render(){
-        const {active} = this.state
+        const {item,handler} = this.props
 
         return  <div className="radioButton">
-                    <div className={active?'radio radio-active':'radio radio-inactive'} onClick={ () => this.setState(previous => ({active:!previous.active}) )}>
-                        {active && <div className="radio-inner"/>}
+                    <div className={item.checked?'radio radio-active':'radio radio-inactive'} onClick={ () => handler(item.id) }>
+                        {item.checked && <div className="radio-inner"/>}
                     </div>
 
                     <span className="text">
-                        {this.props.text}
+                        {item.text}
                     </span>
                 </div>
     }

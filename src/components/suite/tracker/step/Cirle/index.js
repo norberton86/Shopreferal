@@ -4,6 +4,7 @@ import {circleTypes} from '../../../../../utilities/constants'
 import checkmark from '../../../../../assets/checkmark/checkmark.png'
 
 export default class Circle extends React.PureComponent{
+    // eslint-disable-next-line
     constructor(props){
         super(props)
     }
@@ -12,14 +13,14 @@ export default class Circle extends React.PureComponent{
 
         const {type} = this.props
 
-        if(type == circleTypes.complete){
+        if(type === circleTypes.complete){
             return  <div className="complete">
                         <img src={checkmark} alt="Checkmark"/>
                     </div>
         }
         else
             return <div className="circle">
-                    <div className={type==circleTypes.inactive?"inner-active":"inner-inactive"}>
+                    <div className={type===circleTypes.inactive?"inner-active":"inner-inactive"}>
                     </div>
                    </div>
     }

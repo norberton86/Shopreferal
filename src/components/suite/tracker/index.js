@@ -5,7 +5,7 @@ import Step from './step'
 import { circleTypes,barTypes } from '../../../utilities/constants';
 
 export default class Tracker extends React.PureComponent{
-
+// eslint-disable-next-line
     constructor(props){
         super(props)
     }
@@ -15,7 +15,7 @@ export default class Tracker extends React.PureComponent{
 
         if(fullCover || stepIndex < currentStep )
             return circleTypes.complete
-        else if(stepIndex == currentStep)
+        else if(stepIndex === currentStep)
             return circleTypes.active
         else
             return circleTypes.inactive

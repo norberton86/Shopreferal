@@ -1,0 +1,62 @@
+@import "../../../sass/css-variables.scss";
+
+.dropdown{
+  
+  .floating{
+    margin-top: -7px;
+  }
+
+  .resting{
+    margin-top: 15px;
+  }
+
+  label{
+
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color:$regular-text-color;
+    position: absolute;
+    margin-left: 12px;
+    background-color: white;
+
+    span{
+      color:#d52b1e;
+    }
+
+  }
+
+  .head{
+    border: solid 1px #c4c4c4;
+    cursor: pointer;
+    background-color: white;
+  
+    input{
+      height: 38px;
+      border: none;
+      cursor: pointer;
+
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: normal;
+      color:$regular-text-color;
+      padding-left: 12px;
+      box-sizing: border-box;
+    }
+
+    img{
+      margin-left: 13px;
+      
+    }
+    
+  }
+
+  .dropDownBody{
+    position: absolute;
+    z-index: 999;
+    border-top: none;
+    border: solid 1px #c4c4c4;
+    box-sizing: border-box;
+    background: white;
+  }
+}

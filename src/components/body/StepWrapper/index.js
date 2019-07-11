@@ -10,12 +10,9 @@ import {
 
 class StepWrapper extends React.Component{
 
-    constructor(props){
-        super(props)
-    }
+  
 
     next(){
-
         let nextStep = parseInt(this.props.currentStep)+1
         this.props.setCurrentStep(nextStep)
         switch(nextStep){
@@ -28,13 +25,11 @@ class StepWrapper extends React.Component{
             case 4: 
                     this.props.history.push('/StepFour'); 
                     break; 
+            default: break;
         }
-
     }
 
-    finish(){
-
-    }
+    finish(){}
 
     previous(){
         
@@ -57,7 +52,7 @@ class StepWrapper extends React.Component{
                      <div className="actions">
                             <ButtonAutoZone text='PREVIOUS' width='184px' height='38px' borderColor='#3a3c3d' backgroundColor= 'white' color='#3a3c3d' handler={this.previous.bind(this)}/>
                             {this.props.currentStep < 4 && <ButtonAutoZone text='NEXT' width='184px' height='38px' borderColor='#f37f00' backgroundColor= '#f37f00' color='white'  handler={this.next.bind(this)}/>}
-                            { this.props.currentStep == 4 && <ButtonAutoZone text='FINISH' width='184px' height='38px' borderColor='#f37f00' backgroundColor= '#f37f00' color='white'  handler={this.finish.bind(this)}/>}
+                            { this.props.currentStep === 4 && <ButtonAutoZone text='FINISH' width='184px' height='38px' borderColor='#f37f00' backgroundColor= '#f37f00' color='white'  handler={this.finish.bind(this)}/>}
                      </div>
                       
                 </div>

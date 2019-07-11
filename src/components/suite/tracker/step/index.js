@@ -4,7 +4,7 @@ import {circleTypes} from '../../../../utilities/constants'
 import './step.scss'
 
 export default class Step extends React.PureComponent{
-    
+    // eslint-disable-next-line
     constructor(props)
     {
         super(props)
@@ -16,8 +16,8 @@ export default class Step extends React.PureComponent{
         return <div className="step" style={{width,marginLeft}}>
                       <Circle type={type}/>
                       <div className="name"> 
-                         <span className={type==circleTypes.inactive?'inactive':'active'}> {firstName.toUpperCase()}</span>
-                         <span className={type==circleTypes.inactive?'inactive':'active'}> {lastName.toUpperCase()}</span>
+                         <span className={type===circleTypes.inactive?'inactive':'active'}> {firstName.toUpperCase()}</span>
+                         <span className={type===circleTypes.inactive?'inactive':'active'}> {lastName.toUpperCase()}</span>
                       </div>
                </div>
     }
